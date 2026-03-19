@@ -109,8 +109,8 @@ const PrivacyPolicy = () => {
                         If you have any questions about this Privacy Policy or how we handle your personal data, please contact us:
                     </p>
                     <div className="text-white">
-                        <p><strong>Advanced Autobody Solutions</strong></p>
-                        <p>Email: <a href="mailto:info@advancedautobodysolutions.co.uk" className="text-[#FF6D00] hover:underline">info@advancedautobodysolutions.co.uk</a></p>
+                        <p><strong>Resin Reskin</strong></p>
+                        <p>Email: <a href="mailto:info@advancedautobodysolutions.co.uk" className="text-[#A8844A] hover:underline">info@advancedautobodysolutions.co.uk</a></p>
                         <p>Phone: +44 7440 366913</p>
                         <p>Address: Advanced Autobody Solutions Unit 10, Orchard Trading Estate Langley Road South , Manchester, United Kingdom</p>
                     </div>
@@ -120,7 +120,7 @@ const PrivacyPolicy = () => {
                             href="https://ico.org.uk/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-[#FF6D00] hover:underline"
+                            className="text-[#A8844A] hover:underline"
                         >
                             Information Commissioner’s Office (ICO)
                         </a>.

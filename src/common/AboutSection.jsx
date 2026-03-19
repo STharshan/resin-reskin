@@ -6,14 +6,12 @@ export default function ServiceAbout({ data = {}, onCta }) {
 
   return (
     <section
-      className="bg-[#1c1917] py-32 relative overflow-hidden"
-      style={{ fontFamily: "'DM Sans', sans-serif" }}
+      className="bg-[#1A1917] py-32 relative overflow-hidden border-t border-[#2E2B28]"
     >
-      {/* Large decorative background number */}
+      {/* Large decorative background number using Off White at low opacity */}
       <div
-        className="absolute right-5 top-5 leading-none select-none pointer-events-none text-white"
+        className="absolute right-5 top-5 leading-none select-none pointer-events-none text-[#F2EDE8]"
         style={{
-          fontFamily: "'Playfair Display', Georgia, serif",
           fontSize: "clamp(120px,18vw,200px)",
           opacity: 0,
           animation: "aboutBgNum .8s .2s forwards",
@@ -24,19 +22,18 @@ export default function ServiceAbout({ data = {}, onCta }) {
 
       <div className="relative z-10 max-w-5xl mx-auto px-8">
 
-        {/* Subtitle */}
+        {/* Subtitle using Deep Gold */}
         <p
-          className="text-amber-400 font-mono text-sm mb-3"
+          className="text-[#A8844A] font-bold text-[11px] tracking-[.25em] uppercase mb-4"
           style={{ animation: "aboutSlide .6s .1s both" }}
         >
           / {data.subtitle}
         </p>
 
-        {/* Heading */}
+        {/* Heading using Off White */}
         <h2
-          className="text-stone-100 mb-10 leading-tight"
+          className="text-[#F2EDE8] mb-10 leading-tight"
           style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
             fontSize: "clamp(32px,4vw,50px)",
             animation: "aboutFadeUp .7s .2s both",
           }}
@@ -44,51 +41,50 @@ export default function ServiceAbout({ data = {}, onCta }) {
           {data.heading}
         </h2>
 
-        {/* Body */}
+        {/* Body using Warm Grey */}
         <p
-          className="text-stone-400 text-[16px] leading-[1.8] font-light mb-9"
+          className="text-[#8C8480] text-[16px] leading-[1.8] font-light mb-12"
           style={{ animation: "aboutFadeUp .7s .3s both" }}
         >
           {data.body}
         </p>
 
-        {/* Bullets — safe with default [] */}
-        <ul className="mb-10 space-y-0">
+        {/* Bullets using Line color for borders and Warm Gold for diamonds */}
+        <ul className="mb-12 space-y-0">
           {bullets.map((item, i) => (
             <li
               key={i}
-              className="flex items-start gap-4 text-stone-300 py-[10px] border-b border-white/[.06] text-[14px] font-light"
+              className="flex items-start gap-5 text-[#F2EDE8] py-[14px] border-b border-[#2E2B28] text-[15px] font-light"
               style={{ animation: `aboutFadeUp .6s ${0.3 + i * 0.1}s both` }}
             >
-              <span className="text-amber-400 mt-[3px] text-[8px] flex-shrink-0">◆</span>
+              <span className="text-[#C9A96E] mt-[6px] text-[10px] flex-shrink-0">◆</span>
               {item}
             </li>
           ))}
         </ul>
 
-        {/* Sub heading */}
+        {/* Sub heading using Off White */}
         <h3
-          className="text-stone-100 mb-3 text-[22px]"
+          className="text-[#F2EDE8] mb-4 text-[24px] "
           style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
             animation: "aboutFadeUp .7s .55s both",
           }}
         >
           {data.subHeading}
         </h3>
 
-        {/* Sub body */}
+        {/* Sub body using Warm Grey */}
         <p
-          className="text-stone-400 text-[14px] leading-[1.75] font-light mb-10"
+          className="text-[#8C8480] text-[14px] leading-[1.8] font-light mb-12 max-w-2xl"
           style={{ animation: "aboutFadeUp .7s .6s both" }}
         >
           {data.subBody}
         </p>
 
-        {/* CTA */}
+        {/* CTA using Warm Gold & Deep Charcoal */}
         <button
           onClick={onCta}
-          className="group inline-flex items-center gap-3 border border-white text-white bg-transparent px-8 py-4 text-[11px] tracking-[.2em] uppercase hover:bg-white hover:text-stone-900 transition-all duration-300"
+          className="group inline-flex items-center gap-4 bg-[#C9A96E] text-[#0E0E0E] px-10 py-5 text-[11px] font-bold tracking-[.2em] uppercase hover:bg-[#A8844A] transition-all duration-300 shadow-xl"
           style={{ animation: "aboutFadeUp .7s .7s both" }}
         >
           {data.ctaText}
@@ -107,7 +103,7 @@ export default function ServiceAbout({ data = {}, onCta }) {
         }
         @keyframes aboutBgNum {
           from { opacity:0; transform:translate(20px,20px); }
-          to   { opacity:.07; transform:translate(0,0); }
+          to   { opacity:.04; transform:translate(0,0); }
         }
       `}</style>
     </section>

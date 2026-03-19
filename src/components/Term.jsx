@@ -28,7 +28,7 @@ const TermsConditions = () => {
                   <section>
                       <h2 className="text-2xl font-medium">3. Intellectual Property</h2>
                       <p className="text-white">
-                          All content on this website (including text, images, graphics, and logos) is owned by or licensed to  Advanced Autobody Solutions.
+                          All content on this website (including text, images, graphics, and logos) is owned by or licensed to  Resin Reskin.
                           You may view, download, and print content for personal use only.
                           You must not copy, reproduce, or distribute our website content without prior written consent.
                       </p>
@@ -77,8 +77,8 @@ const TermsConditions = () => {
                           If you have any questions about these Terms of Use, please contact us:
                       </p>
                       <div className="text-white">
-                          <p><strong>Advanced Autobody Solutions</strong></p>
-                          <p>Email: <a href="mailto:info@advancedautobodysolutions.co.uk" className="text-[#FF6D00] hover:underline">info@advancedautobodysolutions.co.uk</a></p>
+                          <p><strong>Resin Reskin</strong></p>
+                          <p>Email: <a href="mailto:info@advancedautobodysolutions.co.uk" className="text-[#A8844A] hover:underline">info@advancedautobodysolutions.co.uk</a></p>
                           <p>Phone: +44 7440 366913</p>
                           <p>Address: Advanced Autobody Solutions Unit 10, Orchard Trading Estate Langley Road South , Manchester, United Kingdom</p>
                       </div>

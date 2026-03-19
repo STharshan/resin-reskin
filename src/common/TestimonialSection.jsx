@@ -3,23 +3,21 @@
 export default function ServiceTestimonial({ data }) {
   return (
     <section
-      className="py-32 bg-[#fafaf8]"
-      style={{ fontFamily: "'DM Sans', sans-serif" }}
+      className="py-32 bg-[#221F1C] border-t border-[#2E2B28]"
     >
       <div className="max-w-7xl mx-auto px-8">
 
         {/* Heading */}
         <div className="mb-14">
           <p
-            className="text-amber-700 font-mono text-sm mb-3"
+            className="text-[#A8844A]  font-bold text-[11px] tracking-[.25em] uppercase mb-3"
             style={{ animation: "testiSlide .6s .1s both" }}
           >
             / {data.subtitle}
           </p>
           <h2
-            className="text-stone-900 max-w-md leading-[1.2]"
+            className="text-[#F2EDE8] max-w-md leading-[1.2] "
             style={{
-              fontFamily: "'Playfair Display', Georgia, serif",
               fontSize: "clamp(28px,3.5vw,46px)",
               animation: "testiFadeUp .7s .2s both",
             }}
@@ -33,42 +31,41 @@ export default function ServiceTestimonial({ data }) {
 
           {/* Image with reveal animation */}
           <div
-            className="lg:col-span-3 overflow-hidden"
+            className="lg:col-span-3 overflow-hidden border border-[#2E2B28]"
             style={{ animation: "testiImgReveal 1s .3s both" }}
           >
             <img
               src={data.image}
               alt="Testimonial"
-              className="w-full h-[460px] object-cover"
+              className="w-full h-[500px] object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000"
             />
           </div>
 
-          {/* Quote card with stacked shadow */}
+          {/* Quote card with stacked shadow using 'Line' and 'Subtle Line' */}
           <div
-            className="lg:col-span-2 bg-white border border-stone-200 p-10 flex flex-col justify-between"
+            className="lg:col-span-2 bg-[#1A1917] border border-[#3A3633] p-12 flex flex-col justify-between"
             style={{
-              boxShadow: "4px 4px 0 #f5f5f4, 8px 8px 0 #e7e5e4",
+              boxShadow: "6px 6px 0 #2E2B28, 12px 12px 0 #3A3633",
               animation: "testiFadeIn .8s .5s both",
             }}
           >
             <div>
-              {/* Animated quote mark */}
+              {/* Animated quote mark in Warm Gold */}
               <div
-                className="leading-[.8] mb-4 text-amber-300"
+                className="leading-[.8] mb-6 text-[#C9A96E]"
                 style={{
-                  fontFamily: "'Playfair Display', Georgia, serif",
-                  fontSize: "80px",
+                 
+                  fontSize: "90px",
                   animation: "testiQuoteMark .6s .6s both",
                 }}
               >
-                "
+                “
               </div>
 
               {/* Quote text */}
               <h3
-                className="text-stone-900 leading-[1.5] mb-6 text-[18px]"
+                className="text-[#F2EDE8] leading-[1.6] mb-8 text-[20px]  italic"
                 style={{
-                  fontFamily: "'Playfair Display', Georgia, serif",
                   animation: "testiFadeUp .7s .7s both",
                 }}
               >
@@ -78,17 +75,17 @@ export default function ServiceTestimonial({ data }) {
 
             {/* Author */}
             <div
-              className="flex items-center gap-4 border-t border-stone-100 pt-5"
+              className="flex items-center gap-5 border-t border-[#2E2B28] pt-8"
               style={{ animation: "testiFadeUp .6s .8s both" }}
             >
               <img
                 src={data.avatar}
                 alt={data.name}
-                className="w-11 h-11 rounded-full object-cover grayscale"
+                className="w-12 h-12 rounded-full object-cover grayscale border border-[#3A3633]"
               />
               <div>
-                <div className="font-medium text-stone-900 text-sm">{data.name}</div>
-                <div className="text-stone-400 text-xs mt-0.5">{data.role}</div>
+                <div className="font-bold text-[#F2EDE8] text-sm tracking-wide">{data.name}</div>
+                <div className="text-[#8C8480] text-[11px] uppercase tracking-widest mt-1">{data.role}</div>
               </div>
             </div>
           </div>

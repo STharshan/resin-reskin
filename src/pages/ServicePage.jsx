@@ -1,7 +1,7 @@
-import { SERVICE_DATA } from "../data/mot.js";
-import ServiceHero from "../common/HeroSection";
-import ServiceAbout from "../common/AboutSection";
-import ServiceTestimonial from "../common/TestimonialSection";
+import { SERVICE_DATA } from "../data/Service.js";
+import ServiceHero from "../common/HeroSection.jsx";
+import ServiceAbout from "../common/AboutSection.jsx";
+import ServiceTestimonial from "../common/TestimonialSection.jsx";
 import GallerySection from "../common/GallerySection.jsx";
 
 
@@ -21,11 +21,11 @@ export default function ServicePage({ serviceKey }) {
   };
 
   return (
-    <div className="font-sans">
+    <div className="">
       <ServiceHero data={data.hero} onCta={scrollToContact} />
       <ServiceAbout data={data.about} onCta={scrollToContact} />
       <ServiceTestimonial data={data.testimonial} />
-      <GallerySection     data={data.gallery.slides} />
+      <GallerySection     slides={data.gallery.slides} /> 
     </div>
   );
 }

@@ -6,7 +6,9 @@ export default function AboutSection() {
 
   useEffect(() => {
     const obs = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setLoaded(true); },
+      ([entry]) => {
+        if (entry.isIntersecting) setLoaded(true);
+      },
       { threshold: 0.15 }
     );
     if (sectionRef.current) obs.observe(sectionRef.current);
@@ -14,185 +16,73 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
-
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        .about-root {
-          background: #f0ede6;
-          font-family: 'Inter', sans-serif;
-          padding: 80px 24px;
-        }
-        @media (min-width: 640px) {
-          .about-root { padding: 100px 40px; }
-        }
-        @media (min-width: 1024px) {
-          .about-root { padding: 120px 64px; }
-        }
-
-        .about-inner {
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        /* Two-column wrapper */
-        .about-wrapper {
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 48px;
-          align-items: center;
-        }
-        @media (min-width: 1024px) {
-          .about-wrapper {
-            grid-template-columns: 1fr 1fr;
-            gap: 64px;
-          }
-        }
-
-        /* Image */
-        .about-img-col {
-          opacity: 0;
-          transform: translateX(-30px);
-          transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-        .about-img-col.loaded {
-          opacity: 1;
-          transform: translateX(0);
-        }
-
-        .about-img-wrap {
-          width: 100%;
-          overflow: hidden;
-          /* Tall portrait crop like the screenshot */
-          aspect-ratio: 4 / 5;
-        }
-        @media (min-width: 1024px) {
-          .about-img-wrap {
-            aspect-ratio: unset;
-            height: 560px;
-          }
-        }
-
-        .about-img-wrap img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          display: block;
-        }
-
-        /* Content */
-        .about-content {
-          opacity: 0;
-          transform: translateX(30px);
-          transition: opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s;
-        }
-        .about-content.loaded {
-          opacity: 1;
-          transform: translateX(0);
-        }
-
-        .about-subtitle {
-          font-family: 'Inter', sans-serif;
-          font-size: 12px;
-          font-weight: 400;
-          letter-spacing: 0.12em;
-          color: #888;
-          margin-bottom: 12px;
-        }
-
-        .about-title {
-          font-family: 'Playfair Display', serif;
-          font-weight: 700;
-          font-size: clamp(2rem, 4.5vw, 3rem);
-          line-height: 1.1;
-          color: #111;
-          margin-bottom: 24px;
-          letter-spacing: -0.01em;
-        }
-
-        .about-para {
-          font-size: clamp(0.875rem, 1.8vw, 0.975rem);
-          font-weight: 300;
-          line-height: 1.8;
-          color: #555;
-          margin-bottom: 36px;
-          max-width: 480px;
-        }
-
-        /* Button */
-        .about-btn {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          background: #111;
-          color: #fff;
-          font-family: 'Inter', sans-serif;
-          font-size: 0.875rem;
-          font-weight: 500;
-          padding: 15px 28px;
-          border-radius: 999px;
-          border: none;
-          text-decoration: none;
-          cursor: pointer;
-          transition: background 0.22s, transform 0.22s;
-          letter-spacing: 0.01em;
-        }
-        .about-btn:hover {
-          background: #2a2a2a;
-          transform: translateX(2px);
-        }
-      `}</style>
-
-      <section className="about-root" id="home-about" ref={sectionRef}>
-        <div className="about-inner">
-          <div className="about-wrapper">
-
-            {/* Image */}
-            <div className={`about-img-col${loaded ? " loaded" : ""}`}>
-              <div className="about-img-wrap">
-                <img
-                  src="https://cdn.prod.website-files.com/615b611125aa45d5cc374140/615b611125aa45b1a437419b_image-home-about-architecture-x-template.jpg"
-                  srcSet="
-                    https://assets.website-files.com/615b611125aa45d5cc374140/615b611125aa45b1a437419b_image-home-about-architecture-x-template-p-500.jpeg 500w,
-                    https://assets.website-files.com/615b611125aa45d5cc374140/615b611125aa45b1a437419b_image-home-about-architecture-x-template.jpg 1632w
-                  "
-                  sizes="(max-width: 479px) 90vw, (max-width: 991px) 94vw, 580px"
-                  alt="Architecture firm team at work"
-                  loading="eager"
-                />
-              </div>
+    <section 
+      ref={sectionRef}
+      id="home-about" 
+      className="bg-[#1A1917] px-6 py-20 sm:px-10 sm:py-24 lg:px-16 lg:py-[120px]  overflow-hidden border-t border-[#2E2B28]"
+    >
+      <div className="max-w-[1200px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
+          {/* Image Column */}
+          <div 
+            className={`transition-all duration-1000 ease-out transform ${
+              loaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
+            }`}
+          >
+            <div className="w-full aspect-[4/5] lg:aspect-auto lg:h-[560px] overflow-hidden border border-[#3A3633]">
+              <img
+                src="https://cdn.prod.website-files.com/615b611125aa45d5cc374140/615b611125aa45b1a437419b_image-home-about-Resin Reskin-x-template.jpg"
+                alt="Resin Reskin firm team at work"
+                className="w-full h-full object-cover block grayscale hover:grayscale-0 transition-all duration-700"
+                loading="eager"
+              />
             </div>
-
-            {/* Content */}
-            <div className={`about-content${loaded ? " loaded" : ""}`}>
-              <p className="about-subtitle">/ 02</p>
-              <h2 className="about-title">About our firm</h2>
-              <p className="about-para">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit sem etiam
-                duis amet lectus vivamus varius volutpat tortor elementum unc
-                viverra quam amet a viverra et vel lacus habitant vitae sit sit
-                tincidunt etiam et convallis nulla latea pellentesque facilisi
-                dignissim massa adipiscing pellentesque massa.
-              </p>
-              <a href="/contact" className="about-btn">
-                Get in touch
-                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true">
-                  <path
-                    d="M1 6h14M9 1l5 5-5 5"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-
           </div>
+
+          {/* Content Column */}
+          <div 
+            className={`transition-all duration-1000 ease-out delay-200 transform ${
+              loaded ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
+            }`}
+          >
+            <p className="text-[12px] font-bold tracking-[0.2em] text-[#A8844A] mb-3 uppercase">
+              / 02
+            </p>
+            
+            <h2 className=" font-extrabold text-[clamp(2rem,4.5vw,3rem)] leading-[1.1] text-[#F2EDE8] mb-6 tracking-tight">
+              About our firm
+            </h2>
+            
+            <p className="text-[clamp(0.875rem,1.8vw,0.975rem)] font-light leading-[1.8] text-[#8C8480] mb-9 max-w-[480px]">
+              We are dedicated to the art of seamless surfaces. With a focus on architectural 
+              integrity and luxury finishes, our firm transforms standard environments into 
+              extraordinary spaces using the finest resin and plastering techniques available 
+              in the industry today.
+            </p>
+            
+            <a 
+              href="/contact" 
+              className="group inline-flex items-center gap-[12px] bg-[#C9A96E] text-[#0E0E0E] text-[0.875rem] font-bold px-8 py-[18px] rounded-full transition-all duration-300 hover:bg-[#A8844A] hover:translate-x-1"
+            >
+              Get in touch
+              <svg 
+                className="transition-transform duration-300 group-hover:translate-x-1" 
+                width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"
+              >
+                <path
+                  d="M1 6h14M9 1l5 5-5 5"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

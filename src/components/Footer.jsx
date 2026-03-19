@@ -1,13 +1,3 @@
-const ArchitectureLogo = () => (
-  <svg width="30" height="34" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M16 2L2 10V26L16 34L30 26V10L16 2Z" stroke="#1a1a1a" strokeWidth="1.5" fill="none"/>
-    <path d="M16 2V34" stroke="#1a1a1a" strokeWidth="1.5"/>
-    <path d="M2 10L16 18L30 10" stroke="#1a1a1a" strokeWidth="1.5"/>
-    <path d="M10 6L10 20" stroke="#1a1a1a" strokeWidth="1"/>
-    <path d="M22 6L22 20" stroke="#1a1a1a" strokeWidth="1"/>
-  </svg>
-);
-
 const pageLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
@@ -17,38 +7,36 @@ const pageLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#EEEAE4] w-full">
+    <footer className="bg-[#0E0E0E] w-full border-t border-[#2E2B28]">
 
       {/* Main section */}
-      <div className="max-w-6xl mx-auto px-8 pt-14 pb-12 flex flex-col md:flex-row justify-between items-start gap-10">
+      <div className="max-w-6xl mx-auto px-8 pt-20 pb-16 flex flex-col md:flex-row justify-between items-start gap-16">
 
         {/* Left: Brand */}
-        <div className="flex flex-col gap-4 max-w-xs">
-          <a href="/" className="flex items-center gap-3 w-fit">
-            <ArchitectureLogo />
+        <div className="flex flex-col gap-6 max-w-xs">
+          <a href="/" className="flex items-center gap-3 w-fit group">
             <span
-              style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
-              className="text-[18px] font-semibold tracking-tight text-stone-900"
+              className="text-[22px] font-bold tracking-tight text-[#F2EDE8] group-hover:text-[#C9A96E] transition-colors duration-300"
             >
-              Architecture X
+              Resin Reskin
             </span>
           </a>
-          <p className="text-[13.5px] text-stone-500 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+          <p className="text-[14px] text-[#8C8480] leading-relaxed ">
+            Specialists in bespoke surface transformations. From resin driveways to luxury interior finishes, we redefine your space with precision.
           </p>
         </div>
 
         {/* Right: Pages */}
-        <div className="flex flex-col gap-4">
-          <span className="text-[11px] font-semibold uppercase tracking-[0.15em] text-stone-400">
-            Pages
+        <div className="flex flex-col gap-6">
+          <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#A8844A]">
+            Navigation
           </span>
-          <ul className="flex flex-col gap-2.5">
+          <ul className="flex flex-col gap-3.5">
             {pageLinks.map((link) => (
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="text-[14px] text-stone-600 hover:text-stone-900 transition-colors duration-150"
+                  className="text-[14px] text-[#8C8480] hover:text-[#C9A96E] transition-all duration-300  tracking-wide"
                 >
                   {link.label}
                 </a>
@@ -61,14 +49,24 @@ export default function Footer() {
 
       {/* Divider */}
       <div className="max-w-6xl mx-auto px-8">
-        <div className="border-t border-stone-300/70" />
+        <div className="border-t border-[#2E2B28]" />
       </div>
 
       {/* Bottom bar */}
-      <div className="max-w-6xl mx-auto px-8 py-5">
-        <p className="text-[12.5px] text-stone-400">
-          Copyright © Architecture X.
+      <div className="max-w-6xl mx-auto px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p className="text-[12px] text-[#5A5652]  tracking-wider uppercase">
+          &copy; {new Date().getFullYear()} Resin Reskin. All rights reserved.
         </p>
+        
+        <div className="flex items-center gap-2">
+           <span className="text-[11px] text-[#5A5652] uppercase tracking-[0.1em]">Powered by</span>
+           <a 
+             href="#" 
+             className="text-[11px] font-bold text-[#A8844A] hover:text-[#C9A96E] transition-colors uppercase tracking-[0.2em]"
+           >
+             Ansely
+           </a>
+        </div>
       </div>
 
     </footer>
