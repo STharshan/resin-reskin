@@ -55,7 +55,7 @@ export default function Navbar() {
           <li className="relative" ref={dropdownRef}>
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex items-center gap-1 text-[14px] text-[#8C8480] hover:text-[#C9A96E] transition-colors font-medium"
+              className="flex items-center gap-1 text-[14px] text-[#8C8480] hover:text-[#C9A96E] transition-colors font-medium cursor-pointer"
             >
               Services
               <ChevronDown 
@@ -80,26 +80,31 @@ export default function Navbar() {
           </li>
 
           <li>
-            <Link to="/about" className="text-[14px] text-[#8C8480] hover:text-[#C9A96E] transition-colors font-medium">
+            <a href="/#about" className="text-[14px] text-[#8C8480] hover:text-[#C9A96E] transition-colors font-medium">
               About
-            </Link>
+            </a>
+          </li>
+          <li>
+            <a href="/#contact" className="text-[14px] text-[#8C8480] hover:text-[#C9A96E] transition-colors font-medium">
+              Contact
+            </a>
           </li>
         </ul>
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Link
-            to="/contact"
+          <a
+            href="/#contact"
             className="group inline-flex items-center gap-2 bg-[#C9A96E] text-[#0E0E0E] text-[13px] font-bold px-6 py-2.5 rounded-full hover:bg-[#A8844A] transition-all duration-300"
           >
             Get in touch 
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Hamburger Toggle */}
         <button
-          className="md:hidden text-[#F2EDE8] p-2"
+          className="md:hidden text-[#F2EDE8] p-2 cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -127,14 +132,15 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Link to="/about" className="text-[20px] text-[#F2EDE8] font-semibold">About</Link>
+          <a href="/#about" className="text-[20px] text-[#F2EDE8] font-semibold">About</a>
+          <a href="/#contact" className="text-[20px] text-[#F2EDE8] font-semibold">Contact</a>
           
-          <Link
-            to="/contact"
+          <a
+            href="/#contact"
             className="mt-6 flex items-center justify-center gap-3 bg-[#C9A96E] text-[#0E0E0E] text-[15px] font-bold py-4 rounded-full w-full"
           >
             Get in touch <ArrowRight size={16} />
-          </Link>
+          </a>
         </div>
       )}
     </nav>

@@ -7,12 +7,14 @@ import ScrollToTop from "./components/ScrollToTop";
 import GDPRConsent from "./components/GDPRButton";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsConditions from "./components/Term";
+import ScrollToHash from "./components/ScrollToHash";
 
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
+      <ScrollToHash />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

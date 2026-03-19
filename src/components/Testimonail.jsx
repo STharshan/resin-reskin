@@ -108,7 +108,7 @@ export default function ClientTestimonials() {
 
       {/* CTA Button */}
       <a 
-        href="/contact"
+        href="/#contact"
         className="mt-16 bg-[#C9A96E] text-[#0E0E0E] rounded-full px-10 py-5 text-sm  font-bold tracking-[0.15em] uppercase cursor-pointer flex items-center gap-3 transition-all duration-300 hover:bg-[#A8844A] hover:scale-105"
       >
         Get in touch

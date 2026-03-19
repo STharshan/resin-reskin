@@ -52,7 +52,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="relative bg-[#0E0E0E] overflow-hidden  border-t border-[#2E2B28]">
+    <section id="contact" className="relative bg-[#0E0E0E] overflow-hidden  border-t border-[#2E2B28]">
       {/* Background grid lines using 'Line' color */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute left-1/2 top-0 bottom-0 w-px bg-[#2E2B28] opacity-50" />

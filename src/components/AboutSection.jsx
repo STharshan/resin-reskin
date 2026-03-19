@@ -18,7 +18,7 @@ export default function AboutSection() {
   return (
     <section 
       ref={sectionRef}
-      id="home-about" 
+      id="about" 
       className="bg-[#1A1917] px-6 py-20 sm:px-10 sm:py-24 lg:px-16 lg:py-[120px]  overflow-hidden border-t border-[#2E2B28]"
     >
       <div className="max-w-[1200px] mx-auto">
@@ -62,7 +62,7 @@ export default function AboutSection() {
             </p>
             
             <a 
-              href="/contact" 
+              href="/#contact" 
               className="group inline-flex items-center gap-[12px] bg-[#C9A96E] text-[#0E0E0E] text-[0.875rem] font-bold px-8 py-[18px] rounded-full transition-all duration-300 hover:bg-[#A8844A] hover:translate-x-1"
             >
               Get in touch

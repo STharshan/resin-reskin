@@ -1,5 +1,8 @@
 // components/ServiceAbout.jsx
 
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
 export default function ServiceAbout({ data = {}, onCta }) {
   // Safe default — crashes if bullets is undefined otherwise
   const bullets = Array.isArray(data.bullets) ? data.bullets : [];
@@ -82,14 +85,18 @@ export default function ServiceAbout({ data = {}, onCta }) {
         </p>
 
         {/* CTA using Warm Gold & Deep Charcoal */}
-        <button
-          onClick={onCta}
+        <Link
+          to="/#contact"
           className="group inline-flex items-center gap-4 bg-[#C9A96E] text-[#0E0E0E] px-10 py-5 text-[11px] font-bold tracking-[.2em] uppercase hover:bg-[#A8844A] transition-all duration-300 shadow-xl"
           style={{ animation: "aboutFadeUp .7s .7s both" }}
         >
           {data.ctaText}
-          <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
-        </button>
+          <ArrowRight
+            size={16}
+            strokeWidth={2.5}
+            className="transition-transform duration-300 group-hover:translate-x-1.5"
+          />
+        </Link>
       </div>
 
       <style>{`

@@ -87,6 +87,7 @@ export default function HomeServices() {
 
   return (
     <section 
+      id="services"
       ref={sectionRef}
       className="bg-[#0E0E0E] text-[#F2EDE8] py-20 px-6 sm:py-24 sm:px-10 lg:py-30 lg:px-16 overflow-hidden "
     >

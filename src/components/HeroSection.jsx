@@ -50,7 +50,7 @@ export default function HomeHero() {
         >
           {/* Gold Button (Primary) */}
           <a
-            href="/contact"
+            href="/#contact"
             className="inline-flex items-center gap-2.25 bg-[#C9A96E] text-[#0E0E0E] text-[0.85rem] font-bold px-5.5 py-3 rounded-full border-[1.5px] border-[#C9A96E] transition-all hover:bg-[#A8844A] hover:border-[#A8844A] whitespace-nowrap tracking-wide"
           >
             Get in touch
@@ -61,7 +61,7 @@ export default function HomeHero() {
 
           {/* Outlined Button (Secondary) */}
           <a
-            href="/services"
+            href="/#services"
             className="inline-flex items-center bg-transparent text-[#F2EDE8] text-[0.85rem] font-medium px-5.5 py-3 rounded-full border-[1.5px] border-[#3A3633] transition-all hover:border-[#C9A96E] hover:text-[#C9A96E] whitespace-nowrap"
           >
             Browse services

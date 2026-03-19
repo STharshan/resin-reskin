@@ -77,7 +77,7 @@ export default function Portfolio() {
         {/* Footer Button */}
         <div className={`flex justify-center mt-20 transition-all duration-700 delay-300 transform ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           <a 
-            href="/portfolio" 
+            href="/#contact" 
             className="inline-flex items-center gap-3 bg-[#C9A96E] text-[#0E0E0E] px-10 py-4 rounded-full border-[1.5px] border-[#C9A96E] font-bold text-[0.875rem] transition-all hover:bg-transparent hover:text-[#C9A96E] whitespace-nowrap uppercase tracking-widest"
           >
             Get in touch

@@ -38,7 +38,7 @@ export default function Banner() {
           >
             {/* Gold filled pill */}
             <a
-              href="/contact"
+              href="/#contact"
               className="inline-flex items-center gap-2.5 bg-[#C9A96E] text-[#0E0E0E]  text-[0.875rem] font-bold px-8 py-4 rounded-full border-[1.5px] border-[#C9A96E] transition-all duration-300 hover:bg-[#A8844A] hover:border-[#A8844A] whitespace-nowrap tracking-wide"
             >
               Get in touch
@@ -55,7 +55,7 @@ export default function Banner() {
 
             {/* Outlined pill */}
             <a
-              href="/services"
+              href="/#services"
               className="inline-flex items-center bg-transparent text-[#F2EDE8]  text-[0.875rem] font-medium px-8 py-4 rounded-full border-[1.5px] border-[#3A3633] transition-all duration-300 hover:border-[#C9A96E] hover:text-[#C9A96E] whitespace-nowrap"
             >
               Browse services

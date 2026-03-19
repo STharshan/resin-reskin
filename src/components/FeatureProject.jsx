@@ -83,7 +83,7 @@ export default function FeaturedProject() {
             bespoke finish, see how we transform surfaces with precision.
           </p>
           <a 
-            href="/contact" 
+            href="/#contact" 
             className="group inline-flex items-center gap-3 bg-[#C9A96E] text-[#0E0E0E] px-8 py-4 rounded-full font-bold transition-all hover:bg-[#A8844A] active:scale-95 uppercase tracking-widest text-[0.8rem]"
           >
             Get in touch

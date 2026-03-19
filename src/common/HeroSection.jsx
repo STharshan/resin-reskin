@@ -1,5 +1,7 @@
 // components/ServiceHero.jsx
 
+import { ArrowRight } from "lucide-react";
+
 export default function ServiceHero({ data, onCta }) {
   return (
     <section
@@ -31,7 +33,7 @@ export default function ServiceHero({ data, onCta }) {
           <h1
             className="text-[clamp(48px,6vw,80px)] leading-[.92] tracking-tight text-[#F2EDE8] mb-6"
             style={{
-             
+
               animation: "heroFadeUp .8s .2s both",
             }}
           >
@@ -51,7 +53,11 @@ export default function ServiceHero({ data, onCta }) {
             style={{ animation: "heroFadeUp .8s .5s both" }}
           >
             {data.ctaText}
-            <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+            <ArrowRight
+              size={16}
+              strokeWidth={2.5}
+              className="transition-transform duration-200 group-hover:translate-x-1.5"
+            />
           </button>
         </div>
 
