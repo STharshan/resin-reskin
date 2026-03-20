@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function ServiceAbout({ data = {}, onCta }) {
-  // Safe default — crashes if bullets is undefined otherwise
+  // Safe default crashes if bullets is undefined otherwise
   const bullets = Array.isArray(data.bullets) ? data.bullets : [];
 
   return (
@@ -57,10 +57,10 @@ export default function ServiceAbout({ data = {}, onCta }) {
           {bullets.map((item, i) => (
             <li
               key={i}
-              className="flex items-start gap-5 text-[#F2EDE8] py-[14px] border-b border-[#2E2B28] text-[15px] font-light"
+              className="flex items-start gap-5 text-[#F2EDE8] py-3.5 border-b border-[#2E2B28] text-[15px] font-light"
               style={{ animation: `aboutFadeUp .6s ${0.3 + i * 0.1}s both` }}
             >
-              <span className="text-[#C9A96E] mt-[6px] text-[10px] flex-shrink-0">◆</span>
+              <span className="text-[#C9A96E] mt-1.5 text-[10px] shrink-0">◆</span>
               {item}
             </li>
           ))}

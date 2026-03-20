@@ -40,7 +40,7 @@ export default function HomeHero() {
           className={`text-[clamp(0.85rem,2vw,0.975rem)] font-light leading-[1.7] text-[#8C8480] max-w-110 mb-7 transition-all duration-650 delay-180 ease-out transform
             ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
-           Transforming residential and commercial spaces with handcrafted plaster finishes, micro cement, and epoxy resin — built for clients who demand the finest.
+           Transforming residential and commercial spaces with handcrafted plaster finishes, micro cement, and epoxy resin, built for clients who demand the finest.
         </p>
 
         <div

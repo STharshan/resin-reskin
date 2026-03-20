@@ -9,19 +9,19 @@ const services = [
   },
   {
     title: "Metallic Plaster",
-    description: "Bold, light-catching surfaces infused with fine metallic pigments — crafted to make a lasting impression.",
+    description: "Bold, light-catching surfaces infused with fine metallic pigments, crafted to make a lasting impression.",
     image: "/a3.png",
     href: "/metallic-plaster",
   },
   {
     title: "Micro Cement",
-    description: "A seamless, joint-free coating for floors, walls, and wet rooms — durable, waterproof, and effortlessly modern.",
+    description: "A seamless, joint-free coating for floors, walls, and wet rooms, durable, waterproof, and effortlessly modern.",
     image: "/a4.png",
     href: "/micro-cement",
   },
   {
     title: "Polished Plaster",
-    description: "Smooth, refined, and luminous — a classic finish that elevates walls, ceilings, and architectural features.",
+    description: "Smooth, refined, and luminous, a classic finish that elevates walls, ceilings, and architectural features.",
     image: "/a5.png",
     href: "/polished-plaster",
   },

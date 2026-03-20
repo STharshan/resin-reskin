@@ -10,11 +10,11 @@ export const SERVICE_DATA = {
     about: {
       subtitle: "/ 01",
       heading: "About the service",
-      body: "Minerals plaster draws inspiration from the natural world — evoking the textures of limestone, sandstone, and raw earth in a refined, modern application. This finish is perfect for interiors that seek warmth and authenticity without sacrificing elegance. The result is a surface with genuine tactile depth, subtle variation in tone, and a quiet sophistication that works beautifully in both contemporary and traditional settings.",
+      body: "Minerals plaster draws inspiration from the natural world, evoking the textures of limestone, sandstone, and raw earth in a refined, modern application. This finish is perfect for interiors that seek warmth and authenticity without sacrificing elegance. The result is a surface with genuine tactile depth, subtle variation in tone, and a quiet sophistication that works beautifully in both contemporary and traditional settings.",
       bullets: [
         "A natural, breathable finish suitable for all interior wall surfaces.",
         "Warm, earthy tones that complement wood, stone, and natural material schemes.",
-        "Each application is unique — no two walls will ever look identical.",
+        "Each application is unique no two walls will ever look identical.",
         "Suitable for residential and high-end commercial environments.",
       ],
       subHeading: "What's included?",
@@ -95,7 +95,7 @@ export const SERVICE_DATA = {
     about: {
       subtitle: "/ 01",
       heading: "About the service",
-      body: "Venetian plaster is one of the most prestigious wall finishes in the world. Originating in Renaissance Italy, this technique involves applying multiple layers of lime-based plaster, hand-burnished to create extraordinary depth, movement, and a natural marble-like sheen. At Resin Reskin, our craftsmen bring this ancient artform into contemporary interiors — from sleek modern apartments to grand period homes. Every application is entirely bespoke, ensuring no two walls are ever the same.",
+      body: "Venetian plaster is one of the most prestigious wall finishes in the world. Originating in Renaissance Italy, this technique involves applying multiple layers of lime-based plaster, hand-burnished to create extraordinary depth, movement, and a natural marble-like sheen. At Resin Reskin, our craftsmen bring this ancient artform into contemporary interiors, from sleek modern apartments to grand period homes. Every application is entirely bespoke, ensuring no two walls are ever the same.",
       bullets: [
         "Suitable for feature walls, hallways, and luxury living spaces",
         "Completely breathable and naturally resistant to mould",
@@ -140,7 +140,7 @@ export const SERVICE_DATA = {
     about: {
       subtitle: "/ 04",
       heading: "About the service",
-      body: "Polished plaster is the cornerstone of luxury interior finishing. Applied in thin, precise layers and burnished to a smooth, light-reflective surface, it delivers a look of understated sophistication that elevates any space. Unlike paint or wallpaper, polished plaster has genuine depth — it interacts with natural and artificial light in a way that no surface covering can replicate. At Resin Reskin, we specialise in high-end polished plaster for clients who expect nothing less than perfection.",
+      body: "Polished plaster is the cornerstone of luxury interior finishing. Applied in thin, precise layers and burnished to a smooth, light-reflective surface, it delivers a look of understated sophistication that elevates any space. Unlike paint or wallpaper, polished plaster has genuine depth, it interacts with natural and artificial light in a way that no surface covering can replicate. At Resin Reskin, we specialise in high-end polished plaster for clients who expect nothing less than perfection.",
       bullets: [
         "Perfect for living rooms, bedrooms, bathrooms, and hallways.",
         "A timeless finish that never dates and adds real value to a property.",
@@ -185,13 +185,13 @@ export const SERVICE_DATA = {
       body: "Micro cement is one of the most versatile and sought-after finishes in modern interior design. Applied at just 2–3mm thickness, it can be laid over existing tiles, concrete, and most surfaces without the need for removal or heavy preparation. The result is a completely seamless, joint-free surface with an industrial elegance that suits kitchens, bathrooms, living spaces, and commercial environments alike. Durable, waterproof, and endlessly customisable, micro cement is the finish of choice for design-led clients.",
       bullets: [
         "Can be applied to floors, walls, worktops, showers, and furniture.",
-        "No joints or grout lines — completely seamless from floor to ceiling.",
+        "No joints or grout lines completely seamless from floor to ceiling.",
         "Highly resistant to water, staining, and everyday wear when properly sealed.",
         "Available in a wide range of colours, from warm neutrals to bold statements.",
       ],
       subHeading: "What's included?",
       subBody:
-        "We assess your existing surfaces and advise on the most appropriate preparation method. Our team applies micro cement in multiple coats, with sanding between layers for a flawless result. All surfaces are finished with a high-performance sealant designed for the specific use — whether that's a wet room floor or a kitchen worktop. Samples are provided before work begins.",
+        "We assess your existing surfaces and advise on the most appropriate preparation method. Our team applies micro cement in multiple coats, with sanding between layers for a flawless result. All surfaces are finished with a high performance sealant designed for the specific use, whether that's a wet room floor or a kitchen worktop. Samples are provided before work begins",
       ctaText: "Get a Quote",
     },
     testimonial: {
@@ -224,12 +224,12 @@ export const SERVICE_DATA = {
     about: {
       subtitle: "/ 06",
       heading: "About the service",
-      body: "Epoxy resin is the ultimate solution for surfaces that need to be as tough as they are beautiful. Whether you're looking for a stunning designer floor for your home or a hard-wearing industrial coating for a commercial space, Resin Reskin delivers a finish that performs under pressure and looks exceptional doing it. Our epoxy resin systems are available in a vast array of colours, finishes, and effects — including metallics, flakes, and solid tones — giving you complete creative control over your space.",
+      body: "Epoxy resin is the ultimate solution for surfaces that need to be as tough as they are beautiful. Whether you're looking for a stunning designer floor for your home or a hard-wearing industrial coating for a commercial space, Resin Reskin delivers a finish that performs under pressure and looks exceptional doing it. Our epoxy resin systems are available in a vast array of colours, finishes, and effects: including metallics, flakes, and solid tones, giving you complete creative control over your space.",
       bullets: [
         "Designer resin floors for residential living spaces, kitchens, and basements.",
         "Commercial and industrial flooring for shops, showrooms, and garages.",
         "Seamless, non-porous surface that's easy to clean and maintain.",
-        "Exceptionally durable — resistant to heavy foot traffic, chemicals, and impact.",
+        "Exceptionally durable resistant to heavy foot traffic, chemicals, and impact.",
       ],
       subHeading: "What's included?",
       subBody:

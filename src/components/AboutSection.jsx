@@ -55,7 +55,7 @@ export default function AboutSection() {
             </h2>
             
             <p className="text-[clamp(0.875rem,1.8vw,0.975rem)] font-light leading-[1.8] text-[#8C8480] mb-9 max-w-lg">
-              Resin Reskin is a UK-based specialist finishing studio working with homeowners, interior designers, and commercial clients who value craftsmanship above all else. We work with a curated range of premium finishes — from traditional Venetian plaster to contemporary epoxy resin systems — applying each one by hand with meticulous attention to detail. Every project is unique, every finish is bespoke, and every result is built to last.
+              Resin Reskin is a UK based specialist finishing studio working with homeowners, interior designers, and commercial clients who value craftsmanship above all else. We work with a curated range of premium finishes: from traditional Venetian plaster to contemporary epoxy resin systems, applying each one by hand with meticulous attention to detail. Every project is unique, every finish is bespoke, and every result is built to last.
             </p>
             
             <a 

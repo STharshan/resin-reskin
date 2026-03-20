@@ -77,7 +77,7 @@ export default function ContactSection() {
             </h2>
 
             <p className="text-[#8C8480] leading-relaxed mb-12 text-base max-w-sm">
-              Whether you have a clear vision or just a starting point, we'd love to hear about your project. Fill out the form below or reach out on WhatsApp for a faster response — we typically reply within 24 hours.
+              Whether you have a clear vision or just a starting point, we'd love to hear about your project. Fill out the form below or reach out on WhatsApp for a faster response, as we typically reply within 24 hours.
             </p>
 
             <div>
@@ -107,7 +107,7 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* RIGHT COLUMN — CARD */}
+          {/* RIGHT COLUMN CARD */}
           <div className="lg:w-7/12 w-full">
             <div className="bg-[#1A1917] rounded-2xl shadow-2xl overflow-hidden border border-[#3A3633]">
               {submitted ? (

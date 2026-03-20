@@ -37,7 +37,7 @@ export default function Portfolio() {
           </div>
           <div className="lg:flex lg:justify-end">
             <p className="text-[clamp(0.85rem,1.6vw,0.95rem)] font-light leading-relaxed text-[#8C8480] max-w-105">
-              Take a look at our most recent work A selection of residential and commercial projects — each one a collaboration between our craft and our client's vision.
+              Take a look at our most recent work: a selection of residential and commercial projects, each one a collaboration between our craft and our client's vision.
             </p>
           </div>
         </div>
