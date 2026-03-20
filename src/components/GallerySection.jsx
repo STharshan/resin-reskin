@@ -2,18 +2,10 @@ import { useEffect, useRef, useState } from "react";
 
 const projects = [
   {
-    href: "/project/manhattan-residence",
-    image: "https://cdn.prod.website-files.com/615b611125aa450c4137415d/615b611125aa45239e374232_image-4-thumbnail-portfolio-Resin Reskin-x-template.jpg",
-    location: "Manhattan, NY",
-    date: "2024",
-    title: "Luxury Venetian Plaster Installation",
+    image: "a2.png",
   },
   {
-    href: "/project/brooklyn-heights",
-    image: "https://cdn.prod.website-files.com/615b611125aa450c4137415d/615b611125aa45aecb374230_image-3-thumbnail-portfolio-Resin Reskin-x-template.jpg",
-    location: "Brooklyn Heights, NY",
-    date: "2023",
-    title: "Bespoke Metallic Plaster Design",
+    image: "a3.png",
   },
 ];
 
@@ -33,19 +25,19 @@ export default function Portfolio() {
   return (
     <section 
       ref={sectionRef} 
-      className="bg-[#0E0E0E] px-6 py-20 sm:px-10 sm:py-24 lg:px-16 lg:py-[120px]  border-t border-[#2E2B28]"
+      className="bg-[#0E0E0E] px-6 py-20 sm:px-10 sm:py-24 lg:px-16 lg:py-30  border-t border-[#2E2B28]"
     >
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-300 mx-auto">
         
         {/* Header Section */}
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-16 items-end mb-14 lg:mb-16 transition-all duration-700 transform ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
           <div>
             <p className="text-[12px] font-bold tracking-[0.2em] text-[#A8844A] mb-2.5 uppercase">/ 03</p>
-            <h2 className=" font-extrabold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.08] text-[#F2EDE8] tracking-tight">Our portfolio</h2>
+            <h2 className=" font-extrabold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.08] text-[#F2EDE8] tracking-tight">Recent Projects</h2>
           </div>
           <div className="lg:flex lg:justify-end">
-            <p className="text-[clamp(0.85rem,1.6vw,0.95rem)] font-light leading-relaxed text-[#8C8480] max-w-[420px]">
-              A curated selection of our most prestigious architectural surface projects across the United Kingdom.
+            <p className="text-[clamp(0.85rem,1.6vw,0.95rem)] font-light leading-relaxed text-[#8C8480] max-w-105">
+              Take a look at our most recent work A selection of residential and commercial projects — each one a collaboration between our craft and our client's vision.
             </p>
           </div>
         </div>
@@ -61,7 +53,7 @@ export default function Portfolio() {
               style={{ transitionDelay: `${i * 0.15}s` }}
             >
               {/* Image Column */}
-              <div className="aspect-[4/3] overflow-hidden bg-[#1A1917] border border-[#3A3633]">
+              <div className="aspect-4/3 overflow-hidden bg-[#1A1917] border border-[#3A3633]">
                 <img
                   src={p.image}
                   alt={p.title}

@@ -29,19 +29,18 @@ export default function HomeHero() {
       {/* Text block */}
       <div className="px-6 py-14 sm:px-10 sm:py-18 lg:px-16 lg:pt-24 lg:pb-12">
         <h1
-          className={` font-extrabold text-[clamp(2.6rem,9vw,6.5rem)] leading-[1.02] tracking-tight text-[#F2EDE8] mb-4.5 max-w-200 transition-all duration-650 ease-out transform
+          className={` font-extrabold text-[clamp(2.6rem,6vw,6.5rem)] leading-[1.02] tracking-tight text-[#F2EDE8] mb-4.5 max-w-200 transition-all duration-650 ease-out transform
             ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-7"}`}
         >
-          We are a fine Resin Reskin firm in{" "}
-          <span className="whitespace-nowrap text-[#C9A96E]">London</span>
+          We are a specialist wall and floor finishing studio in{" "}
+          <span className="whitespace-nowrap text-[#C9A96E]">UK</span>
         </h1>
 
         <p
           className={`text-[clamp(0.85rem,2vw,0.975rem)] font-light leading-[1.7] text-[#8C8480] max-w-110 mb-7 transition-all duration-650 delay-180 ease-out transform
             ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
-          Expertly crafted surfaces that redefine luxury. We specialise in high-end 
-          architectural finishes, delivering bespoke resin solutions for distinguished spaces.
+           Transforming residential and commercial spaces with handcrafted plaster finishes, micro cement, and epoxy resin — built for clients who demand the finest.
         </p>
 
         <div

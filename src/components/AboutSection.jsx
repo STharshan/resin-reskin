@@ -19,9 +19,9 @@ export default function AboutSection() {
     <section 
       ref={sectionRef}
       id="about" 
-      className="bg-[#1A1917] px-6 py-20 sm:px-10 sm:py-24 lg:px-16 lg:py-[120px]  overflow-hidden border-t border-[#2E2B28]"
+      className="bg-[#1A1917] px-6 py-20 sm:px-10 sm:py-24 lg:px-16 lg:py-30 overflow-hidden border-t border-[#2E2B28] flex justify-center"
     >
-      <div className="max-w-[1200px] mx-auto">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* Image Column */}
@@ -30,9 +30,9 @@ export default function AboutSection() {
               loaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
             }`}
           >
-            <div className="w-full aspect-[4/5] lg:aspect-auto lg:h-[560px] overflow-hidden border border-[#3A3633]">
+            <div className="w-full aspect-4/5 lg:aspect-auto lg:h-140 overflow-hidden border border-[#3A3633]">
               <img
-                src="https://cdn.prod.website-files.com/615b611125aa45d5cc374140/615b611125aa45b1a437419b_image-home-about-Resin Reskin-x-template.jpg"
+                src="/a1.jpg"
                 alt="Resin Reskin firm team at work"
                 className="w-full h-full object-cover block grayscale hover:grayscale-0 transition-all duration-700"
                 loading="eager"
@@ -50,20 +50,17 @@ export default function AboutSection() {
               / 02
             </p>
             
-            <h2 className=" font-extrabold text-[clamp(2rem,4.5vw,3rem)] leading-[1.1] text-[#F2EDE8] mb-6 tracking-tight">
-              About our firm
+            <h2 className="font-extrabold text-[clamp(2rem,4.5vw,3rem)] leading-[1.1] text-[#F2EDE8] mb-6 tracking-tight">
+              About Our Studio
             </h2>
             
-            <p className="text-[clamp(0.875rem,1.8vw,0.975rem)] font-light leading-[1.8] text-[#8C8480] mb-9 max-w-[480px]">
-              We are dedicated to the art of seamless surfaces. With a focus on architectural 
-              integrity and luxury finishes, our firm transforms standard environments into 
-              extraordinary spaces using the finest resin and plastering techniques available 
-              in the industry today.
+            <p className="text-[clamp(0.875rem,1.8vw,0.975rem)] font-light leading-[1.8] text-[#8C8480] mb-9 max-w-lg">
+              Resin Reskin is a UK-based specialist finishing studio working with homeowners, interior designers, and commercial clients who value craftsmanship above all else. We work with a curated range of premium finishes — from traditional Venetian plaster to contemporary epoxy resin systems — applying each one by hand with meticulous attention to detail. Every project is unique, every finish is bespoke, and every result is built to last.
             </p>
             
             <a 
               href="/#contact" 
-              className="group inline-flex items-center gap-[12px] bg-[#C9A96E] text-[#0E0E0E] text-[0.875rem] font-bold px-8 py-[18px] rounded-full transition-all duration-300 hover:bg-[#A8844A] hover:translate-x-1"
+              className="group inline-flex items-center gap-3 bg-[#C9A96E] text-[#0E0E0E] text-[0.875rem] font-bold px-8 py-4.5 rounded-full transition-all duration-300 hover:bg-[#A8844A] hover:translate-x-1"
             >
               Get in touch
               <svg 

@@ -18,17 +18,17 @@ export default function Banner() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#221F1C] px-6 py-20 sm:px-10 sm:py-24 lg:px-16 lg:py-[120px] overflow-hidden border-y border-[#2E2B28]"
+      className="bg-[#221F1C] px-6 py-20 sm:px-10 sm:py-24 lg:px-16 lg:py-30 overflow-hidden border-y border-[#2E2B28]"
     >
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-300 mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10 lg:gap-16">
           
           {/* Title */}
           <h2
-            className={` font-extrabold text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] text-[#F2EDE8] tracking-tight max-w-[640px] transition-all duration-700 ease-out transform
+            className={` font-extrabold text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] text-[#F2EDE8] tracking-tight max-w-160 transition-all duration-700 ease-out transform
               ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-7"}`}
           >
-            Get in touch today to receive a <span className="text-[#C9A96E]">bespoke project quote.</span>
+            Get a free project <span className="text-[#C9A96E]">consultation today.</span>
           </h2>
 
           {/* Buttons */}

@@ -3,38 +3,38 @@ import { useEffect, useRef, useState } from "react";
 const services = [
   {
     title: "Venetian Plaster",
-    description: "Expertly applied Italian finishes that bring a timeless, marble-like depth to your interior surfaces.",
-    image: "https://cdn.prod.website-files.com/615b611125aa45d5cc374140/615b611125aa4561ac374186_image-1-services-Resin Reskin-x-template.jpg",
+    description: "A timeless, marble-like finish hand-burnished in layers for extraordinary depth and a natural luminous sheen.",
+    image: "/a2.png",
     href: "/venetian-plaster",
   },
   {
     title: "Metallic Plaster",
-    description: "Luxurious reflective coatings infused with metallic pigments for a contemporary, industrial-chic aesthetic.",
-    image: "https://cdn.prod.website-files.com/615b611125aa45d5cc374140/615b611125aa45e3f0374189_image-2-services-Resin Reskin-x-template.jpg",
+    description: "Bold, light-catching surfaces infused with fine metallic pigments — crafted to make a lasting impression.",
+    image: "/a3.png",
     href: "/metallic-plaster",
   },
   {
     title: "Micro Cement",
-    description: "A seamless, durable, and waterproof coating perfect for floors, walls, and bespoke furniture projects.",
-    image: "https://cdn.prod.website-files.com/615b611125aa45646937418b_image-3-services-Resin Reskin-x-template.jpg",
+    description: "A seamless, joint-free coating for floors, walls, and wet rooms — durable, waterproof, and effortlessly modern.",
+    image: "/a4.png",
     href: "/micro-cement",
   },
   {
     title: "Polished Plaster",
-    description: "Achieve a mirror-like sheen with our high-end polished finishes, designed for sophisticated modern spaces.",
-    image: "https://cdn.prod.website-files.com/615b611125aa453c14374188_image-4-services-Resin Reskin-x-template.jpg",
+    description: "Smooth, refined, and luminous — a classic finish that elevates walls, ceilings, and architectural features.",
+    image: "/a5.png",
     href: "/polished-plaster",
   },
   {
     title: "Epoxy Resin",
-    description: "Bespoke high-performance flooring solutions combining extreme durability with unique artistic patterns.",
-    image: "https://cdn.prod.website-files.com/615b611125aa45dd53374187_image-5-services-Resin Reskin-x-template.jpg",
+    description: "High-performance designer floors and industrial coatings built to be as striking as they are resilient.",
+    image: "/a6.png",
     href: "/epoxy-resin",
   },
   {
     title: "Minerals Plaster",
-    description: "Natural mineral-based finishes that offer a raw, organic texture and breathable surface for your walls.",
-    image: "https://cdn.prod.website-files.com/615b611125aa45244137418a_image-6-services-Resin Reskin-x-template.jpg",
+    description: "Organic textures inspired by limestone and raw earth, bringing warmth and authenticity to any interior.",
+    image: "/a7.png",
     href: "/minerals-plaster",
   },
 ];
@@ -99,7 +99,7 @@ export default function HomeServices() {
             <div className="text-[12px] font-bold tracking-[0.2em] text-[#A8844A] mb-2.5 uppercase">/ 01</div>
             <h2 className=" font-extrabold text-[clamp(2rem,5vw,3.5rem)] leading-[1.08] mb-3.5">Our services</h2>
             <p className="text-[0.9rem] font-light leading-[1.7] text-[#8C8480] max-w-100">
-              We offer a comprehensive range of premium resin and plastering services tailored to architectural excellence.
+              Our services From centuries-old plastering traditions to cutting-edge resin systems, every finish we apply is crafted by hand and tailored to your space.
             </p>
           </div>
 
@@ -108,14 +108,14 @@ export default function HomeServices() {
             <button
               onClick={prev}
               disabled={current === 0}
-              className="w-[52px] h-[52px] rounded-full border-[1.5px] border-[#2E2B28] text-[#F2EDE8] flex items-center justify-center transition-all hover:enabled:border-[#C9A96E] hover:enabled:text-[#C9A96E] disabled:opacity-20 disabled:cursor-default"
+              className="w-13 h-13 rounded-full border-[1.5px] border-[#2E2B28] text-[#F2EDE8] flex items-center justify-center transition-all hover:enabled:border-[#C9A96E] hover:enabled:text-[#C9A96E] disabled:opacity-20 disabled:cursor-default"
             >
               <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M17 7H1M7 1L1 7l6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
             <button
               onClick={next}
               disabled={current >= maxIndex}
-              className="w-[52px] h-[52px] rounded-full border-[1.5px] border-[#2E2B28] text-[#F2EDE8] flex items-center justify-center transition-all hover:enabled:border-[#C9A96E] hover:enabled:text-[#C9A96E] disabled:opacity-20 disabled:cursor-default"
+              className="w-13 h-13 rounded-full border-[1.5px] border-[#2E2B28] text-[#F2EDE8] flex items-center justify-center transition-all hover:enabled:border-[#C9A96E] hover:enabled:text-[#C9A96E] disabled:opacity-20 disabled:cursor-default"
             >
               <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M1 7h16M11 1l6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
@@ -142,7 +142,7 @@ export default function HomeServices() {
                 style={{ width: `calc(${slideWidthPct}% - ${(gap * (visible - 1)) / visible}px)` }}
               >
                 <a href={svc.href} className="group block text-inherit no-underline cursor-pointer">
-                  <div className="w-full aspect-[3/3.5] overflow-hidden mb-6 bg-[#1A1917] border border-[#2E2B28]">
+                  <div className="w-full aspect-3/3.5 overflow-hidden mb-6 bg-[#1A1917] border border-[#2E2B28]">
                     <img 
                       src={svc.image} 
                       alt={svc.title}

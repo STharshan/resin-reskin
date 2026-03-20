@@ -73,11 +73,11 @@ export default function ContactSection() {
               className="text-[#F2EDE8]  font-extrabold leading-[1.1] mb-6"
               style={{ fontSize: "clamp(2.2rem, 5vw, 3.6rem)", letterSpacing: "-0.02em" }}
             >
-              Get a free project quote today.
+              Start your project Subheading: Ready to transform your space?
             </h2>
 
             <p className="text-[#8C8480] leading-relaxed mb-12 text-base max-w-sm">
-              Ready to start your next masterpiece? Fill out the form or reach out via WhatsApp for a faster response.
+              Whether you have a clear vision or just a starting point, we'd love to hear about your project. Fill out the form below or reach out on WhatsApp for a faster response — we typically reply within 24 hours.
             </p>
 
             <div>

@@ -32,7 +32,7 @@ export default function FeaturedProject() {
       ref={sectionRef} 
       className="bg-[#0E0E0E] py-20 px-6 min-h-screen flex items-center  overflow-hidden border-t border-[#2E2B28]"
     >
-      <div className="max-w-[1200px] mx-auto w-full relative">
+      <div className="max-w-300 mx-auto w-full relative">
         
         {/* ── Image Area (Pushed Right) ── */}
         <div 
@@ -41,7 +41,7 @@ export default function FeaturedProject() {
         >
           <div className="relative aspect-video w-full overflow-hidden border border-[#2E2B28]">
             <img
-              src="https://cdn.prod.website-files.com/615b611125aa45d5cc374140/615b611125aa45f90237419c_image-home-project-Resin Reskin-x-template.jpg"
+              src="/a5.png"
               alt="Featured Project Video Thumbnail"
               className="w-full h-full object-cover brightness-[0.5] grayscale hover:grayscale-0 transition-all duration-700"
             />
@@ -66,7 +66,7 @@ export default function FeaturedProject() {
         {/* ── Floating Content Box ── */}
         <div 
           className={`bg-[#1A1917] border border-[#3A3633] p-8 md:p-12 lg:p-16 z-20 shadow-2xl transition-all duration-1000 cubic-bezier(0.16, 1, 0.3, 1)
-          lg:absolute lg:top-1/2 lg:left-0 lg:-translate-y-1/2 lg:w-[480px]
+          lg:absolute lg:top-1/2 lg:left-0 lg:-translate-y-1/2 lg:w-120
           relative w-[90%] mx-auto lg:mx-0
           ${loaded 
             ? "opacity-100 translate-y-0 lg:-translate-y-1/2" 
@@ -76,11 +76,10 @@ export default function FeaturedProject() {
             / 04
           </span>
           <h2 className="text-[#F2EDE8]  font-extrabold text-[clamp(1.8rem,3.5vw,2.5rem)] leading-[1.2] mb-6">
-            Witness the art of the perfect reskin
+            Witness the art of the perfect finish
           </h2>
           <p className="text-[#8C8480] text-[0.95rem] leading-relaxed mb-10 max-w-sm">
-            Experience our process in motion. From site preparation to the final 
-            bespoke finish, see how we transform surfaces with precision.
+            Every project begins with preparation and ends with something extraordinary. Watch how raw surfaces are transformed layer by layer, entirely by hand into finishes that last a lifetime.
           </p>
           <a 
             href="/#contact" 
@@ -100,7 +99,7 @@ export default function FeaturedProject() {
       {/* ── Lightbox Overlay ── */}
       {lightbox && (
         <div 
-          className="fixed inset-0 bg-[#0E0E0E]/95 z-[100] flex items-center justify-center p-4 md:p-10 animate-in fade-in duration-300 backdrop-blur-sm"
+          className="fixed inset-0 bg-[#0E0E0E]/95 z-100 flex items-center justify-center p-4 md:p-10 animate-in fade-in duration-300 backdrop-blur-sm"
           onClick={() => setLightbox(false)}
         >
           <button 
