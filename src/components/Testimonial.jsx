@@ -49,7 +49,7 @@ export default function ClientTestimonials() {
       {/* Card Area */}
       <div className="relative w-full max-w-5xl flex flex-col lg:flex-row items-center justify-start gap-0">
         {/* Room Image */}
-        <div className="w-full lg:w-[58%] aspect-[4/3] overflow-hidden shrink-0 z-10 shadow-2xl border border-[#2E2B28]">
+        <div className="w-full lg:w-[58%] aspect-4/3 overflow-hidden shrink-0 z-10 shadow-2xl border border-[#2E2B28]">
           <img
             key={t.image}
             src={t.image}

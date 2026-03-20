@@ -41,7 +41,7 @@ function VideoSlide({ src }) {
       <video ref={ref} src={src} playsInline onEnded={() => setPlaying(false)} className="w-full h-full object-contain" />
       {!playing && (
         <button onClick={play} className="absolute inset-0 flex items-center justify-center bg-black/40 border-0 cursor-pointer group">
-          <div className="w-[72px] h-[72px] rounded-full border border-[#C9A96E]/50 bg-[#221F1C]/80 flex items-center justify-center text-[#C9A96E] transition-transform duration-300 group-hover:scale-110">
+          <div className="w-18 h-18 rounded-full border border-[#C9A96E]/50 bg-[#221F1C]/80 flex items-center justify-center text-[#C9A96E] transition-transform duration-300 group-hover:scale-110">
             <IconPlay />
           </div>
         </button>
@@ -89,7 +89,7 @@ export default function GallerySection({ slides = [] }) {
     <section className="bg-[#1A1917] min-h-screen flex flex-col items-center justify-center px-6 py-20 border-t border-[#2E2B28]">
       <style>{KEYFRAMES}</style>
 
-      <div className="relative w-full max-w-[900px]">
+      <div className="relative w-full max-w-225">
 
         {/* Cinematic Counter */}
         <div

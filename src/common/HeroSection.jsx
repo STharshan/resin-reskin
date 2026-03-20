@@ -24,7 +24,7 @@ export default function ServiceHero({ data, onCta }) {
             className="flex items-center gap-3 mb-6"
             style={{ animation: "heroSlideRight .6s .1s both" }}
           >
-            <div className="w-7 h-[2px] bg-[#C9A96E]" />
+            <div className="w-7 h-0.5 bg-[#C9A96E]" />
             <span className="text-[11px] tracking-[.25em] uppercase text-[#A8844A] font-bold">
               Service
             </span>
@@ -76,7 +76,7 @@ export default function ServiceHero({ data, onCta }) {
             <img
               src={data.image}
               alt={data.title}
-              className="w-full h-[520px] object-cover grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition-all duration-1000"
+              className="w-full h-130 object-cover grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition-all duration-1000"
             />
           </div>
 

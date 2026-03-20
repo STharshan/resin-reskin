@@ -5,7 +5,7 @@ import AboutSection from '../components/AboutSection'
 import Banner from '../components/Banner'
 import Portfolio from '../components/GallerySection'
 import FeaturedProject from '../components/FeatureProject'
-import TestimonialSection from '../components/Testimonail'
+import TestimonialSection from '../components/Testimonial'
 import ContactSection from '../components/ContactSection'
 import FindUs from '../components/Findus'
 

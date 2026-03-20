@@ -174,7 +174,6 @@ export default function HomeServices() {
             />
           ))}
         </div>
-
       </div>
     </section>
   );

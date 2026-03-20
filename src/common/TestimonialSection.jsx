@@ -37,7 +37,7 @@ export default function ServiceTestimonial({ data }) {
             <img
               src={data.image}
               alt="Testimonial"
-              className="w-full h-[500px] object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000"
+              className="w-full h-125 object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000"
             />
           </div>
 

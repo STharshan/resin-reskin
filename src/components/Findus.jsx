@@ -22,10 +22,10 @@ export default function FindUs() {
 
         {/* Map Container */}
         <div
-          className="rounded-2xl overflow-hidden shadow-2xl border border-[#3A3633] bg-[#1A1917] w-full h-[450px] relative"
+          className="rounded-2xl overflow-hidden shadow-2xl border border-[#3A3633] bg-[#1A1917] w-full h-113 relative"
         >
           {/* Subtle Overlay to blend the map slightly with the dark theme */}
-          <div className="absolute inset-0 pointer-events-none border-[12px] border-[#1A1917] z-10 rounded-2xl"></div>
+          <div className="absolute inset-0 pointer-events-none border-12 border-[#1A1917] z-10 rounded-2xl"></div>
           
           <iframe
             title="Workshop Location"
