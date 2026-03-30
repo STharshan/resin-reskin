@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -137,11 +138,11 @@ export default function HomeServices() {
           >
             {services.map((svc, i) => (
               <div 
-                key={i}
+                key={svc.title}
                 className="shrink-0"
                 style={{ width: `calc(${slideWidthPct}% - ${(gap * (visible - 1)) / visible}px)` }}
               >
-                <a href={svc.href} className="group block text-inherit no-underline cursor-pointer">
+                <Link to={svc.href} className="group block text-inherit no-underline cursor-pointer">
                   <div className="w-full aspect-3/3.5 overflow-hidden mb-6 bg-[#1A1917] border border-[#2E2B28]">
                     <img 
                       src={svc.image} 
@@ -157,7 +158,7 @@ export default function HomeServices() {
                       <span className="h-[1.5px] bg-[#C9A96E] w-8 transition-all duration-300 group-hover:w-full" />
                     </span>
                   </div>
-                </a>
+                </Link>
               </div>
             ))}
           </div>

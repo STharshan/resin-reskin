@@ -47,8 +47,8 @@ export default function ServiceHero({ data, onCta }) {
             {data.description}
           </p>
 
-          <button
-            onClick={onCta}
+          <a
+            href="#gallery"
             className="group inline-flex items-center gap-4 bg-[#C9A96E] text-[#0E0E0E] px-10 py-5 text-[11px] font-bold tracking-[.2em] uppercase hover:bg-[#A8844A] transition-all duration-300 shadow-xl"
             style={{ animation: "heroFadeUp .8s .5s both" }}
           >
@@ -58,7 +58,7 @@ export default function ServiceHero({ data, onCta }) {
               strokeWidth={2.5}
               className="transition-transform duration-200 group-hover:translate-x-1.5"
             />
-          </button>
+          </a>
         </div>
 
         {/* ── Image ── */}
@@ -76,6 +76,7 @@ export default function ServiceHero({ data, onCta }) {
             <img
               src={data.image}
               alt={data.title}
+              loading="lazy"
               className="w-full h-130 object-cover grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition-all duration-1000"
             />
           </div>

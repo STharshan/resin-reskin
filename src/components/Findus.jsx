@@ -29,7 +29,7 @@ export default function FindUs() {
           
           <iframe
             title="Workshop Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.857504382062!2d-0.12775829999999997!3d51.5073509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c38c8cd1d9%3A0x48839974e8306237!2sTrafalgar%20Square!5e0!3m2!1sen!2suk!4v1710900000000!5m2!1sen!2suk" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153843.4144365799!2d-1.2829286685822655!3d52.95481944627253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c2040d7ae461%3A0x69573887034c4f49!2sNottingham!5e0!3m2!1sen!2suk!4v1711123456789!5m2!1sen!2suk"
             width="100%"
             height="100%"
             allowFullScreen

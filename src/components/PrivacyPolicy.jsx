@@ -110,9 +110,8 @@ const PrivacyPolicy = () => {
                     </p>
                     <div className="text-white">
                         <p><strong>Resin Reskin</strong></p>
-                        <p>Email: <a href="mailto:info@advancedautobodysolutions.co.uk" className="text-[#A8844A] hover:underline">info@advancedautobodysolutions.co.uk</a></p>
-                        <p>Phone: +44 7440 366913</p>
-                        <p>Address: Advanced Autobody Solutions Unit 10, Orchard Trading Estate Langley Road South , Manchester, United Kingdom</p>
+                        <p>Phone: +44 7468 302781</p>
+                        <p>Address: Address: Nottingham, Leicester, Coventry</p>
                     </div>
                     <p className="mt-2 text-white">
                         If you are not satisfied with our response, you have the right to lodge a complaint with the{' '}
