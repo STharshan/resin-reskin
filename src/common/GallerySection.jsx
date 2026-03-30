@@ -86,7 +86,7 @@ export default function GallerySection({ slides = [] }) {
   const slide = slides[cur];
 
   return (
-    <section className="bg-[#1A1917] min-h-screen flex flex-col items-center justify-center px-6 py-20 border-t border-[#2E2B28]">
+    <section id="gallery" className="bg-[#1A1917] min-h-screen flex flex-col items-center justify-center px-6 py-20 border-t border-[#2E2B28]">
       <style>{KEYFRAMES}</style>
 
       <div className="relative w-full max-w-225">

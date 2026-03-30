@@ -23,12 +23,12 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <section 
-      ref={sectionRef} 
+    <section
+      ref={sectionRef}
       className="bg-[#0E0E0E] px-6 py-20 sm:px-10 sm:py-24 lg:px-16 lg:py-30  border-t border-[#2E2B28]"
     >
       <div className="max-w-300 mx-auto">
-        
+
         {/* Header Section */}
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-16 items-end mb-14 lg:mb-16 transition-all duration-700 transform ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
           <div>
@@ -43,33 +43,31 @@ export default function Portfolio() {
         </div>
 
         {/* Projects List */}
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center"> {/* Added items-center to center the 'a' tags */}
           {projects.map((p, i) => (
             <a
-              key={i}
-              href={p.href}
-              className={`group grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-12 lg:gap-16 py-12 md:py-20 border-t border-[#2E2B28] transition-all duration-700 transform last:border-b
-              ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+              key={p.image}
+              className={`group grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-12 lg:gap-16 py-12 md:py-20 border-t border-[#2E2B28] transition-all duration-700 transform last:border-b w-full place-items-center
+      ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               style={{ transitionDelay: `${i * 0.15}s` }}
             >
-              {/* Image Column */}
-              <div className="aspect-4/3 overflow-hidden bg-[#1A1917] border border-[#3A3633]">
+              {/* Image Column - Added w-full and max-width to control the size while centered */}
+              <div className="aspect-4/3 w-full max-w-2xl overflow-hidden bg-[#1A1917] border border-[#3A3633] md:col-span-2">
                 <img
                   src={p.image}
                   alt={p.title}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 ease-out group-hover:scale-105"
-                  loading="eager"
+                  loading="lazy"
                 />
               </div>
-
             </a>
           ))}
         </div>
 
         {/* Footer Button */}
         <div className={`flex justify-center mt-20 transition-all duration-700 delay-300 transform ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-          <a 
-            href="/#contact" 
+          <a
+            href="/#contact"
             className="inline-flex items-center gap-3 bg-[#C9A96E] text-[#0E0E0E] px-10 py-4 rounded-full border-[1.5px] border-[#C9A96E] font-bold text-[0.875rem] transition-all hover:bg-transparent hover:text-[#C9A96E] whitespace-nowrap uppercase tracking-widest"
           >
             Get in touch

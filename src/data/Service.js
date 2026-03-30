@@ -5,7 +5,7 @@ export const SERVICE_DATA = {
       description:
         "Bring the raw, organic beauty of natural stone and earth into your interior with a finish rooted in nature.",
       ctaText: "Explore Textures",
-      image: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=1200&q=80",
+      image: "/a7.png",
     },
     about: {
       subtitle: "/ 01",
@@ -33,10 +33,10 @@ export const SERVICE_DATA = {
     },
     gallery: {
       slides: [
-        { type: "image", src: "https://images.unsplash.com/photo-1615529162924-f8605388461d?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1615873968403-89e068628265?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?w=900&q=80" },
+        { type: "image", src: "/a1.jpg" },
+        { type: "image", src: "/a2.png" },
+        { type: "image", src: "/a3.png" },
+        { type: "image", src: "/a4.png" },
       ],
     },
   },
@@ -47,7 +47,7 @@ export const SERVICE_DATA = {
       description:
         "Add drama, depth, and a touch of glamour with a finish that catches the light and commands attention.",
       ctaText: "Explore Sheen Levels",
-      image: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=1200&q=80",
+      image: "/a3.png",
     },
     about: {
       subtitle: "/ 01",
@@ -75,10 +75,10 @@ export const SERVICE_DATA = {
     },
     gallery: {
       slides: [
-        { type: "image", src: "https://images.unsplash.com/photo-1521226010000-844c802497b7?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1615529182904-14819c35db37?w=900&q=80" },
+        { type: "image", src: "/a5.png" },
+        { type: "image", src: "/a6.png" },
+        { type: "image", src: "/a7.png" },
+        { type: "image", src: "/a1.jpg" },
       ],
     },
   },
@@ -90,7 +90,7 @@ export const SERVICE_DATA = {
         "Transform your walls into a work of art with a finish that has graced the interiors of palaces and luxury homes for centuries.",
       ctaText: "Explore Finishes",
       image:
-        "https://images.unsplash.com/photo-1615873968403-89e068628265?w=1200&q=80", // High-end wall texture image
+        "/a2.png", // High-end wall texture image
     },
     about: {
       subtitle: "/ 01",
@@ -121,10 +121,10 @@ export const SERVICE_DATA = {
     },
     gallery: {
       slides: [
-        { type: "image", src: "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1615529328331-f8917597711f?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1616060246678-55a60d85693a?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=900&q=80" },
+        { type: "image", src: "/a1.jpg" },
+        { type: "image", src: "/a2.png" },
+        { type: "image", src: "/a3.png" },
+        { type: "image", src: "/a4.png" },
       ],
     },
   },
@@ -135,7 +135,7 @@ export const SERVICE_DATA = {
       description:
         "A smooth, luminous finish that brings elegance and refinement to walls, ceilings, and architectural features.",
       ctaText: "View Smooth Finishes",
-      image: "https://images.unsplash.com/photo-1615874641165-220023a8536b?w=1200&q=80",
+      image: "/a5.png",
     },
     about: {
       subtitle: "/ 04",
@@ -163,10 +163,10 @@ export const SERVICE_DATA = {
     },
     gallery: {
       slides: [
-        { type: "image", src: "https://images.unsplash.com/photo-1615529182904-14819c35db37?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1616486701797-0f33f61038ec?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1615873968403-89e068628265?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&q=80" },
+        { type: "image", src: "/a5.png" },
+        { type: "image", src: "/a6.png" },
+        { type: "image", src: "/a7.png" },
+        { type: "image", src: "/a1.jpg" },
       ],
     },
   },
@@ -177,7 +177,7 @@ export const SERVICE_DATA = {
       description:
         "A seamless, ultra-thin coating that transforms floors, walls, and surfaces with a clean, contemporary aesthetic.",
       ctaText: "Discover Seamless Surfaces",
-      image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=1200&q=80",
+      image: "/a4.png",
     },
     about: {
       subtitle: "/ 05",
@@ -205,21 +205,21 @@ export const SERVICE_DATA = {
     },
     gallery: {
       slides: [
-        { type: "image", src: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1505691938895-1758d7eaa511?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1523413363574-c3c44b91967e?w=900&q=80" },
+        { type: "image", src: "/a5.png" },
+        { type: "image", src: "/a6.png" },
+        { type: "image", src: "/a7.png" },
+        { type: "image", src: "/a1.jpg" },
       ],
     },
   },
-  
+
   EpoxyResin: {
     hero: {
       title: "Epoxy Resin",
       description:
         "High-performance, high-impact flooring and surfaces built for beauty, durability, and long-term resilience.",
       ctaText: "See Resin Finishes",
-      image: "https://images.unsplash.com/photo-1595844730298-b960ff98fee0?w=1200&q=80",
+      image: "/a6.png",
     },
     about: {
       subtitle: "/ 06",
@@ -247,10 +247,10 @@ export const SERVICE_DATA = {
     },
     gallery: {
       slides: [
-        { type: "image", src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1595844730298-b960ff98fee0?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80" },
-        { type: "image", src: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=900&q=80" },
+        { type: "image", src: "/a1.jpg" },
+        { type: "image", src: "/a2.png" },
+        { type: "image", src: "/a3.png" },
+        { type: "image", src: "/a4.png" },
       ],
     },
   },
